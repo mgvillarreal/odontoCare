@@ -1,0 +1,152 @@
+/* GLOBALES */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Mulish", sans-serif;
+    font-optical-sizing: auto;
+}
+
+/* HEADER */
+.logo {
+    width: 105px;
+    height: 60px;
+}
+
+.header-inicio{
+    background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(/img/odonto5.jpg);
+    height: 40rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.menu{
+    display: flex;
+    padding: 2rem 2rem 2rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navegacion{
+    display: flex;
+    gap: 1.5rem; 
+    list-style: none;
+}
+
+.navegacion a{
+    text-decoration: none;
+    color: #1d2c7b;
+    font-size: large;
+    font-weight: bold;
+    margin-right: 2rem;
+}
+
+.navegacion a:hover{
+    color: #38b6ff;
+}
+
+.contenedor-logo{
+    margin-left: 2rem;
+}
+
+.header-texto{
+    color: #1d2c7b;
+    margin-top: 7rem;
+    margin-left: 3rem;
+    font-size: xxx-large;
+    text-shadow: 1px 1px 2px gray;
+}
+
+.azul-sec{
+    color: #38b6ff;
+}
+
+.boton-turno{
+    background-color: #1d2c7b;
+    border: none;
+    color: white;
+    padding: 15px 25px;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 12px;
+
+    position: absolute;
+    top: 75%;
+    right: 5%;
+}
+
+.contenedor-boton{
+    display: relative;
+}
+
+/* FOOTER */
+.footer{
+    background-color: #38b6ff8d;
+    padding: 0.8rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer a{
+    text-decoration: none;
+}
+
+.logo-footer {
+    width: 80px;
+    height: 45px;
+}
+
+/* INICIO */
+.inicio-descripcion{
+    text-align: center;
+    margin: 5rem 8rem 4rem 8rem;
+}
+
+.titulo-medio{
+    color: #1d2c7b;
+    margin-bottom: 2rem;
+}
+
+.inicio-seccion{
+    text-align: center;
+    margin: 3rem 8rem 4rem 8rem;
+}
+
+.contacto-iconos{
+    display: inline-flex;
+    text-align: center;
+}
+
+/* PAGINAS */
+.header-pages{
+    background-color: white;
+    height: 7rem;
+    border-bottom: 2px solid #D5D8DC;
+}
+
+.menu-pages{
+    display: flex;
+    padding: 2rem 2rem 2rem 2rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.titulo-principal{
+    color: #1d2c7b;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+    font-weight: 700; /* ? */
+}
+
+.main-paginas{
+    text-align: center;
+    margin: 3rem 12rem 12rem 5rem;
+}
+
+/* NOSOTROS */
