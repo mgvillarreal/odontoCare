@@ -13,15 +13,16 @@ body{
 /* HEADER */
 .logo {
     width: 105px;
-    height: 60px;
 }
 
 .header-inicio{
-    background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(/img/odonto5.jpg);
+    background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(../images/odonto5.jpg);
     height: 40rem;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
+
+    position: relative /* para ubicar el botón */
 }
 
 .menu{
@@ -76,8 +77,13 @@ body{
     border-radius: 12px;
 
     position: absolute;
-    top: 75%;
+    top: 80%;
     right: 5%;
+}
+
+.boton-turno:hover{
+    background-color: #38b6ff;
+    font-size: 18px;
 }
 
 .contenedor-boton{
@@ -87,7 +93,7 @@ body{
 /* FOOTER */
 .footer{
     background-color: #38b6ff8d;
-    padding: 0.8rem;
+    padding: 1rem 2rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
