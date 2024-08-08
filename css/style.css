@@ -10,6 +10,11 @@ body{
     font-optical-sizing: auto;
 }
 
+p{
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
 /* HEADER */
 .logo {
     width: 105px;
@@ -21,21 +26,11 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-
-    position: relative /* para ubicar el botón */
+    position: relative; /* para ubicar el botón */
 }
 
 .menu{
-    display: flex;
     padding: 2rem 2rem 2rem;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.navegacion{
-    display: flex;
-    gap: 1.5rem; 
-    list-style: none;
 }
 
 .navegacion a{
@@ -50,15 +45,12 @@ body{
     color: #38b6ff;
 }
 
-.contenedor-logo{
-    margin-left: 2rem;
-}
-
 .header-texto{
     color: #1d2c7b;
     margin-top: 7rem;
     margin-left: 3rem;
-    font-size: xxx-large;
+    font-size: 4rem;
+    font-weight: 700;
     text-shadow: 1px 1px 2px gray;
 }
 
@@ -90,6 +82,25 @@ body{
     display: relative;
 }
 
+@media (max-width: 992px) {
+    .nav-item {
+      align-self: center;
+    }
+
+    .header-texto{
+        margin-top: 0;
+    }
+
+    .boton-turno{
+        top: 85%;
+        right: 45%;
+    }
+
+    .footer p{
+        font-size: 0.8rem;
+    }
+}
+
 /* FOOTER */
 .footer{
     background-color: #38b6ff8d;
@@ -116,7 +127,9 @@ body{
 
 .titulo-medio{
     color: #1d2c7b;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
+    font-size: 2.5rem;
+    font-weight: 700;
 }
 
 .inicio-seccion{
@@ -127,6 +140,18 @@ body{
 .contacto-iconos{
     display: inline-flex;
     text-align: center;
+}
+
+.card{
+    border: none;
+}
+
+.card-item{
+    padding: 1rem;
+}
+
+.card-item p{
+    margin-top: 1.5rem;
 }
 
 /* PAGINAS */
