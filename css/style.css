@@ -119,27 +119,28 @@ p{
     text-decoration: none;
 }
 
+.footer p{
+    margin-bottom: 0;
+    text-align: center;
+}
+
 .logo-footer {
     width: 80px;
     height: 45px;
 }
 
 /* INICIO */
-.inicio-descripcion{
-    text-align: center;
-    margin: 5rem 8rem 4rem 8rem;
-}
-
 .titulo-medio{
     color: #1d2c7b;
     margin-bottom: 3rem;
     font-size: 2.5rem;
     font-weight: 700;
+    text-align: center;
 }
 
 .inicio-seccion{
     text-align: center;
-    margin: 3rem 8rem 4rem 8rem;
+    margin: 2rem 1rem 4rem 1rem;
 }
 
 .contacto-iconos{
