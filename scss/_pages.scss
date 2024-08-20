@@ -1,0 +1,42 @@
+@import "var";
+
+.header-pages{
+    background-color: $blanco;
+    height: 7rem;
+    border-bottom: 2px solid #D5D8DC;
+
+    .menu-pages{
+        display: flex;
+        padding: 2rem 2rem 2rem 2rem;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .logo {
+        width: 105px;
+    }
+
+    .navegacion a{
+        text-decoration: none;
+        color: $azuloscuro;
+        font-size: large;
+        font-weight: bold;
+        margin-right: 2rem;
+    }
+    
+    .navegacion a:hover{
+        color: $azulclaro;
+    }
+}
+
+.main-paginas{
+    text-align: center;
+
+    .titulo-principal{
+        color: $azuloscuro;
+        margin-bottom: 2rem;
+        margin-top: 1rem;
+        font-weight: 700;
+        text-align: center;
+    }
+}

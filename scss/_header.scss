@@ -1,0 +1,84 @@
+@import "var";
+
+.header-inicio{
+    background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(../images/odonto5.jpg);
+    height: 40rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: relative; /* para ubicar el botón */
+
+    .menu{
+        padding: 2rem 2rem 2rem;
+    }
+
+    .logo {
+        width: 105px;
+    }
+
+    .navegacion a{
+        text-decoration: none;
+        color: $azuloscuro;
+        font-size: large;
+        font-weight: bold;
+        margin-right: 2rem;
+
+        &:hover{
+            color: $azulclaro;
+        }
+    }
+
+    .header-texto{
+        color: $azuloscuro;
+        margin-top: 7rem;
+        margin-left: 3rem;
+        font-size: 4rem;
+        font-weight: 700;
+        text-shadow: 1px 1px 2px gray;
+
+        .azul-sec{
+            color: $azulclaro;
+        }
+    }
+
+    .boton-turno{
+        background-color: $azuloscuro;
+        border: none;
+        color: $blanco;
+        padding: 15px 25px;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 12px;
+        
+        position: absolute;
+        top: 80%;
+        right: 5%;
+
+        &:hover{
+            background-color: $azulclaro;
+            font-size: 18px;
+        }
+    }    
+}
+
+@media (max-width: 992px) {
+    .nav-item {
+      align-self: center;
+    }
+
+    .header-texto{
+        margin-top: 0;
+    }
+
+    .boton-turno{
+        top: 85%;
+        right: 45%;
+    }
+
+    .navbar-collapse.show {
+        background-color: rgba(255, 255, 255, 0.9);
+        padding: 1rem;
+        margin: 0rem -2rem;
+    }
+}
