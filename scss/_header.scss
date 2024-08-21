@@ -30,7 +30,7 @@
 
     .header-texto{
         color: $azuloscuro;
-        margin-top: 7rem;
+        margin-top: 5rem;
         margin-left: 3rem;
         font-size: 4rem;
         font-weight: 700;
@@ -67,10 +67,6 @@
       align-self: center;
     }
 
-    .header-texto{
-        margin-top: 0;
-    }
-
     .boton-turno{
         top: 85%;
         right: 45%;
@@ -80,5 +76,13 @@
         background-color: rgba(255, 255, 255, 0.9);
         padding: 1rem;
         margin: 0rem -2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .header-inicio{
+        .header-texto{
+            margin-top: 0;
+        }
     }
 }
