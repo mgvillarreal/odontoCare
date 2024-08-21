@@ -12,6 +12,8 @@
     <!--CCS-->
     <link rel="stylesheet" href="../css/style.css">
     <link rel="shortcut icon" href="../images/icon.png" type="image/x-icon">
+    <!--Animaciones-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>OdontoCare</title>
 </head>
 <body>
@@ -49,7 +51,7 @@
         <h1 class="titulo-principal">Contacto</h1>
         
         <div class="container mt-4">
-            <div class="row">
+            <div class="row" data-aos="fade-up" data-aos-duration="30000">
                 <div class="col-lg-6 mb-4"> <!-- Formulario -->
                     <form>
                         <div class="form-group">
@@ -137,6 +139,10 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     
 </body>
 </html>

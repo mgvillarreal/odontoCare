@@ -12,6 +12,8 @@
     <!--CCS-->
     <link rel="stylesheet" href="./css/style.css">
     <link rel="shortcut icon" href="./images/icon.png" type="image/x-icon">
+    <!--Animaciones-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>OdontoCare</title>
 </head>
 <body>
@@ -57,7 +59,7 @@
             <p>En OdontoCare, nuestra misión es brindarte una atención dental de calidad superior con un enfoque personalizado. Nos dedicamos a mantener y mejorar la salud bucal de nuestros pacientes a través de servicios innovadores y tecnología avanzada. Desde limpiezas de rutina hasta procedimientos especializados, nuestro equipo de profesionales está aquí para asegurar que tu sonrisa siempre esté en las mejores manos.</p>
         </section>
 
-        <section class="inicio-seccion">
+        <section class="inicio-seccion fondo-gris" data-aos="fade-right">
             <h2 class="titulo-medio">Especialidades</h2>
 
             <div class="container mt-4">
@@ -130,7 +132,7 @@
             </div>
         </section> <!--Fin especialidades-->
 
-        <section class="inicio-seccion">
+        <section class="inicio-seccion" data-aos="fade-left">
             <h2 class="titulo-medio">Instalaciones</h2>
 
             <div class="container mt-4">
@@ -147,48 +149,36 @@
                   </div>
                 </div>
             </div>
-        </section>
+        </section> <!--Fin Instaaciones-->
 
-        <section class="inicio-seccion">
+        <section class="inicio-seccion" data-aos="fade-up-right">
             <h2 class="titulo-medio">Comunícate con nosotros</h2>
 
             <div class="container mt-4">
-                <div class="row">
+                <div class="row contacto">
                   <div class="col-lg-4 col-md-4 col-12 mb-4">
-                    <div class="card">
-                      <div class="card-item">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-pin" width="60" height="60" viewBox="0 0 24 24" stroke-width="1.5" stroke="#1d2c7b" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                            <path d="M9 11a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" />
-                            <path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z" />
-                        </svg>
-                        <p>Calle 123, Buenos Aires</p>
-                      </div>
-                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-pin" width="60" height="60" viewBox="0 0 24 24" stroke-width="1.5" stroke="#1d2c7b" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M9 11a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" />
+                        <path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z" />
+                    </svg>
+                    <p>Calle 123, Buenos Aires</p>
+                  </div>
+                  <div class="col-lg-4 col-md-4 col-12 mb-4">                      
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-phone" width="60" height="60" viewBox="0 0 24 24" stroke-width="1.5" stroke="#1d2c7b" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2" />
+                    </svg>
+                    <p>+54 9 11 12345678</p>
                   </div>
                   <div class="col-lg-4 col-md-4 col-12 mb-4">
-                    <div class="card">
-                      <div class="card-item">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-phone" width="60" height="60" viewBox="0 0 24 24" stroke-width="1.5" stroke="#1d2c7b" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                            <path d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2" />
-                        </svg>
-                        <p>+54 9 11 12345678</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-4 col-md-4 col-12 mb-4">
-                    <div class="card">
-                      <div class="card-item">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock-hour-3" width="60" height="60" viewBox="0 0 24 24" stroke-width="1.5" stroke="#1d2c7b" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                            <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />
-                            <path d="M12 12h3.5" />
-                            <path d="M12 7v5" />
-                        </svg>
-                        <p>Lunes a Viernes 08hs a 20hs</p>
-                      </div>
-                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock-hour-3" width="60" height="60" viewBox="0 0 24 24" stroke-width="1.5" stroke="#1d2c7b" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />
+                        <path d="M12 12h3.5" />
+                        <path d="M12 7v5" />
+                    </svg>
+                    <p>Lunes a Viernes 08hs a 20hs</p>
                   </div>
                 </div>
             </div> <!--Fin Comunicate con Nosotros-->
@@ -224,6 +214,9 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html> 

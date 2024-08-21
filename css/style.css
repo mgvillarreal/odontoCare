@@ -8,6 +8,7 @@
 body {
   font-family: "Mulish", sans-serif;
   font-optical-sizing: auto;
+  background-color: rgba(223, 223, 223, 0.192);
 }
 body p, body label {
   font-size: 1.2rem;
@@ -102,6 +103,12 @@ body p, body label {
 }
 .inicio-seccion .card {
   border: none;
+  border-radius: 5%;
+  transition: transform 1.5s;
+  background-color: rgba(102, 173, 213, 0.26);
+}
+.inicio-seccion .card:hover {
+  transform: rotateY(360deg);
 }
 .inicio-seccion .card .card-item {
   padding: 1rem;
@@ -110,6 +117,9 @@ body p, body label {
   width: 105px;
 }
 .inicio-seccion .card .card-item p {
+  margin-top: 1.5rem;
+}
+.inicio-seccion .contacto p {
   margin-top: 1.5rem;
 }
 
@@ -182,6 +192,9 @@ body p, body label {
   width: 105px;
 }
 
+.row .foto-instalaciones {
+  transition: all 1.5s;
+}
 .row .foto-instalaciones:hover {
   transform: scale(1.1, 1.1);
 }

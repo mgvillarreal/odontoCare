@@ -12,6 +12,8 @@
     <!--CCS-->
     <link rel="stylesheet" href="../css/style.css">
     <link rel="shortcut icon" href="../images/icon.png" type="image/x-icon">
+    <!--Animaciones-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>OdontoCare</title>
 </head>
 <body>
@@ -49,7 +51,7 @@
         <h1 class="titulo-principal">¿Quiénes somos?</h1>
 
         <div class="container">
-            <div class="row align-items-center my-3"> <!-- Descripción -->
+            <div class="row align-items-center my-3" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine"> <!-- Descripción -->
                 <div class="col-lg-6 col-md-12">
                     <img src="../images/odonto2.jpg" alt="Nuestro equipo" class="img-fluid mb-3 mb-lg-0">
                 </div>
@@ -59,7 +61,7 @@
                 </div>
             </div>
          
-            <div class="row"> <!-- Misión, Visión y Valores -->
+            <div class="row" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine"> <!-- Misión, Visión y Valores -->
                 <div class="col-lg-4 col-md-12 mb-1">
                     <div class="p-4">
                         <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-target-arrow" width="92" height="92" viewBox="0 0 24 24" stroke-width="1.5" stroke="#1d2c7b" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -132,6 +134,10 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     
 </body>
 </html>

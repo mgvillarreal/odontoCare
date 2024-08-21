@@ -18,6 +18,13 @@
 
     .card{
         border: none;
+        border-radius: 5%;
+        transition: transform 1.5s;
+        background-color: $azultransparente;
+
+        &:hover {
+            transform: rotateY(360deg);
+        }
 
         .card-item{
             padding: 1rem;
@@ -29,6 +36,12 @@
             p{
                 margin-top: 1.5rem;
             }
+        } 
+    }
+
+    .contacto{
+        p{
+            margin-top: 1.5rem;
         }
     }
 }

@@ -2,6 +2,8 @@
 
 .row{
     .foto-instalaciones{
+        transition: all 1.5s;
+
         &:hover{
             transform: scale(1.1, 1.1);
         }
