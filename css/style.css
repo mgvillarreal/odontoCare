@@ -173,6 +173,7 @@ body p, body label {
 }
 
 .main-paginas {
+  min-height: calc(100vh - 205px);
   text-align: center;
 }
 .main-paginas .titulo-principal {

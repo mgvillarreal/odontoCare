@@ -30,8 +30,9 @@
 }
 
 .main-paginas{
+    min-height: calc(100vh - (77px + 128px));
     text-align: center;
-
+    
     .titulo-principal{
         color: $azuloscuro;
         margin-bottom: 2rem;
