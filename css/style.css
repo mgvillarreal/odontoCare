@@ -32,7 +32,7 @@ body p, body label {
 .header-inicio .navegacion a {
   text-decoration: none;
   color: #1d2c7b;
-  font-size: large;
+  font-size: 1.3rem;
   font-weight: bold;
   margin-right: 2rem;
 }
@@ -46,6 +46,9 @@ body p, body label {
   font-size: 4rem;
   font-weight: 700;
   text-shadow: 1px 1px 2px gray;
+  position: absolute;
+  top: 25%;
+  left: 2%;
 }
 .header-inicio .header-texto .azul-sec {
   color: #38b6ff;
@@ -77,7 +80,8 @@ body p, body label {
     right: 45%;
   }
   .navbar-collapse.show {
-    background-color: rgba(255, 255, 255, 0.9);
+    z-index: 2;
+    background-color: rgba(255, 255, 255, 0.69);
     padding: 1rem;
     margin: 0rem -2rem;
   }
@@ -89,7 +93,7 @@ body p, body label {
 }
 .inicio-seccion {
   text-align: center;
-  margin: 2rem 1rem 4rem 1rem;
+  padding: 2rem 1rem 4rem 1rem;
 }
 .inicio-seccion .titulo-medio {
   color: #1d2c7b;
@@ -123,6 +127,21 @@ body p, body label {
   margin-top: 1.5rem;
 }
 
+.fondo-azul {
+  background-color: rgba(69, 178, 242, 0.2);
+}
+
+@media (max-width: 992px) {
+  .inicio-seccion .container .card .card-item .logo1 {
+    width: 80px;
+  }
+}
+@media (min-width: 1024px) {
+  .inicio-seccion .texto-descripcion {
+    margin-left: 3rem;
+    margin-right: 3rem;
+  }
+}
 .footer {
   background-color: rgba(56, 182, 255, 0.5529411765);
   padding: 1rem 2rem;
@@ -148,9 +167,15 @@ body p, body label {
   }
 }
 .header-pages {
-  background-color: #fff;
+  background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(../images/instrumental.jpg);
+  height: 20rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: relative;
+  /*background-color: $blanco;
   height: 7rem;
-  border-bottom: 2px solid #D5D8DC;
+  border-bottom: 2px solid #D5D8DC;*/
 }
 .header-pages .menu-pages {
   display: flex;
@@ -164,12 +189,22 @@ body p, body label {
 .header-pages .navegacion a {
   text-decoration: none;
   color: #1d2c7b;
-  font-size: large;
+  font-size: 1.3rem;
   font-weight: bold;
   margin-right: 2rem;
+  text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.7647058824);
 }
 .header-pages .navegacion a:hover {
   color: #38b6ff;
+  text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.7647058824);
+}
+.header-pages .titulo-principal-test {
+  color: #1d2c7b;
+  font-weight: 700;
+  text-align: center;
+  text-shadow: 1px 1px 2px gray;
+  font-size: 3.5rem;
+  position: absolute;
 }
 
 .main-paginas {
@@ -184,7 +219,24 @@ body p, body label {
   text-align: center;
 }
 
-.row h3 {
+/*@media (min-width: 992px) {
+    .titulo-principal-test{
+        position: absolute;
+        top: 50%;
+        left: 25%;
+    }
+}*/
+@media (min-width: 1024px) {
+  .titulo-principal-test {
+    position: absolute;
+    top: 50%;
+    left: 36%;
+  }
+}
+.main-paginas .container .imagen-nosotros {
+  border-radius: 15px;
+}
+.main-paginas .container .row h3 {
   color: #1d2c7b;
   font-weight: 700;
 }

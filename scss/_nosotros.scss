@@ -1,8 +1,16 @@
 @import "var";
 
-.row{
-    h3{
-        color: $azuloscuro;
-        font-weight: 700;
+.main-paginas{
+    .container{
+        .imagen-nosotros{
+            border-radius: 15px;
+        }
+
+        .row{
+            h3{
+                color: $azuloscuro;
+                font-weight: 700;
+            }
+        }
     }
 }

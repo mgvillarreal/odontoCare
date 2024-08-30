@@ -1,9 +1,16 @@
 @import "var";
 
 .header-pages{
-    background-color: $blanco;
+    background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(../images/instrumental.jpg);
+    height: 20rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: relative; 
+
+    /*background-color: $blanco;
     height: 7rem;
-    border-bottom: 2px solid #D5D8DC;
+    border-bottom: 2px solid #D5D8DC;*/
 
     .menu-pages{
         display: flex;
@@ -19,13 +26,24 @@
     .navegacion a{
         text-decoration: none;
         color: $azuloscuro;
-        font-size: large;
+        font-size: 1.3rem;
         font-weight: bold;
         margin-right: 2rem;
+        text-shadow: 1px 1px 2px #ffffffc3;
     }
     
     .navegacion a:hover{
         color: $azulclaro;
+        text-shadow: 1px 1px 2px #ffffffc3;
+    }
+
+    .titulo-principal-test{
+        color: $azuloscuro;
+        font-weight: 700;
+        text-align: center;
+        text-shadow: 1px 1px 2px gray;
+        font-size: 3.5rem;
+        position: absolute;
     }
 }
 
@@ -39,5 +57,21 @@
         margin-top: 1rem;
         font-weight: 700;
         text-align: center;
+    }
+}
+
+/*@media (min-width: 992px) {
+    .titulo-principal-test{
+        position: absolute;
+        top: 50%;
+        left: 25%;
+    }
+}*/
+
+@media (min-width: 1024px) {
+    .titulo-principal-test{
+        position: absolute;
+        top: 50%;
+        left: 36%;
     }
 }

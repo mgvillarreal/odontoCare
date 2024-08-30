@@ -2,7 +2,7 @@
 
 .inicio-seccion{
     text-align: center;
-    margin: 2rem 1rem 4rem 1rem;
+    padding: 2rem 1rem 4rem 1rem;
 
     .titulo-medio{
         color: $azuloscuro;
@@ -42,6 +42,33 @@
     .contacto{
         p{
             margin-top: 1.5rem;
+        }
+    }
+}
+
+.fondo-azul{
+    background-color: $azulfondo;
+}
+
+@media (max-width: 992px) {
+    .inicio-seccion{
+        .container{
+            .card{
+                .card-item{
+                    .logo1{
+                        width: 80px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+    .inicio-seccion{
+        .texto-descripcion{
+            margin-left: 3rem;
+            margin-right: 3rem;
         }
     }
 }
