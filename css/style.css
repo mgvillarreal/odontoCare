@@ -79,11 +79,17 @@ body p, body label {
     top: 85%;
     right: 45%;
   }
-  .navbar-collapse.show {
+  .navbar-collapse {
     z-index: 2;
     background-color: rgba(255, 255, 255, 0.69);
-    padding: 1rem;
+    padding: 0.5rem;
     margin: 0rem -2rem;
+  }
+  .navbar-toggler {
+    z-index: 3; /* Asegura que el botón esté por encima del menú */
+  }
+  .navbar-nav {
+    z-index: 1; /* Mantén las opciones de navegación por debajo del toggler */
   }
 }
 @media (max-width: 480px) {
@@ -204,8 +210,10 @@ body p, body label {
   text-align: center;
   text-shadow: 1px 1px 2px gray;
   font-size: 3.5rem;
+  position: absolute;
   top: 50%;
   left: 50%;
+  transform: translate(-50%, -50%);
   white-space: nowrap;
 }
 
@@ -222,7 +230,18 @@ body p, body label {
   font-weight: 700;
 }
 
-.row .icono {
+.container .row .card {
+  height: 100%;
+  border: 2px solid rgba(102, 173, 213, 0.26);
+  background-color: rgba(255, 255, 255, 0.631372549);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 1.5s;
+}
+.container .row .card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transform: scale(1.05, 1.05);
+}
+.container .row .card .card-item .icono {
   width: 105px;
 }
 

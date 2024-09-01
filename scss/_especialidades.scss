@@ -1,7 +1,24 @@
 @import "var";
 
-.row{
-    .icono{
-        width: 105px;
+.container{
+    .row{
+        .card{
+            height: 100%;
+            border: 2px solid $azultransparente;
+            background-color: #ffffffa1;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 1.5s;
+
+            &:hover{
+                box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+                transform: scale(1.05, 1.05);
+            }
+
+            .card-item{
+                .icono{
+                    width: 105px;
+                }
+            }
+        }
     }
 }
