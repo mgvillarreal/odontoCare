@@ -21,7 +21,7 @@ body p, body label {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  position: relative; /* para ubicar el botón */
+  position: relative; /* para ubicar el botón y el título */
 }
 .header-inicio .menu {
   padding: 2rem 2rem 2rem;
@@ -123,6 +123,9 @@ body p, body label {
 .inicio-seccion .card .card-item p {
   margin-top: 1.5rem;
 }
+.inicio-seccion img {
+  border-radius: 15px;
+}
 .inicio-seccion .contacto p {
   margin-top: 1.5rem;
 }
@@ -168,14 +171,11 @@ body p, body label {
 }
 .header-pages {
   background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(../images/instrumental.jpg);
-  height: 20rem;
+  height: 18rem;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
   position: relative;
-  /*background-color: $blanco;
-  height: 7rem;
-  border-bottom: 2px solid #D5D8DC;*/
 }
 .header-pages .menu-pages {
   display: flex;
@@ -198,41 +198,22 @@ body p, body label {
   color: #38b6ff;
   text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.7647058824);
 }
-.header-pages .titulo-principal-test {
+.header-pages .titulo-principal {
   color: #1d2c7b;
   font-weight: 700;
   text-align: center;
   text-shadow: 1px 1px 2px gray;
   font-size: 3.5rem;
-  position: absolute;
+  top: 50%;
+  left: 50%;
+  white-space: nowrap;
 }
 
 .main-paginas {
   min-height: calc(100vh - 205px);
   text-align: center;
 }
-.main-paginas .titulo-principal {
-  color: #1d2c7b;
-  margin-bottom: 2rem;
-  margin-top: 1rem;
-  font-weight: 700;
-  text-align: center;
-}
 
-/*@media (min-width: 992px) {
-    .titulo-principal-test{
-        position: absolute;
-        top: 50%;
-        left: 25%;
-    }
-}*/
-@media (min-width: 1024px) {
-  .titulo-principal-test {
-    position: absolute;
-    top: 50%;
-    left: 36%;
-  }
-}
 .main-paginas .container .imagen-nosotros {
   border-radius: 15px;
 }

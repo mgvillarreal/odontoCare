@@ -2,15 +2,11 @@
 
 .header-pages{
     background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(../images/instrumental.jpg);
-    height: 20rem;
+    height: 18rem;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-    position: relative; 
-
-    /*background-color: $blanco;
-    height: 7rem;
-    border-bottom: 2px solid #D5D8DC;*/
+    position: relative;
 
     .menu-pages{
         display: flex;
@@ -37,41 +33,19 @@
         text-shadow: 1px 1px 2px #ffffffc3;
     }
 
-    .titulo-principal-test{
+    .titulo-principal{
         color: $azuloscuro;
         font-weight: 700;
         text-align: center;
         text-shadow: 1px 1px 2px gray;
         font-size: 3.5rem;
-        position: absolute;
+        top: 50%;
+        left: 50%;
+        white-space: nowrap;
     }
 }
 
 .main-paginas{
     min-height: calc(100vh - (77px + 128px));
     text-align: center;
-    
-    .titulo-principal{
-        color: $azuloscuro;
-        margin-bottom: 2rem;
-        margin-top: 1rem;
-        font-weight: 700;
-        text-align: center;
-    }
-}
-
-/*@media (min-width: 992px) {
-    .titulo-principal-test{
-        position: absolute;
-        top: 50%;
-        left: 25%;
-    }
-}*/
-
-@media (min-width: 1024px) {
-    .titulo-principal-test{
-        position: absolute;
-        top: 50%;
-        left: 36%;
-    }
 }
