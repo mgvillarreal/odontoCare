@@ -19,6 +19,7 @@
     .card{
         border-radius: 5%;
         background-color: $azultransparente;
+        text-decoration: none;
 
         .card-item{
             padding: 1rem;
@@ -49,20 +50,6 @@
 
 .fondo-azul{
     background-color: $azulfondo;
-}
-
-@media (max-width: 992px) {
-    .inicio-seccion{
-        .container{
-            .card{
-                .card-item{
-                    .logo1{
-                        width: 80px;
-                    }
-                }
-            }
-        }
-    }
 }
 
 @media (min-width: 1024px) {

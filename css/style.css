@@ -114,6 +114,7 @@ body p, body label {
 .inicio-seccion .card {
   border-radius: 5%;
   background-color: rgba(102, 173, 213, 0.26);
+  text-decoration: none;
 }
 .inicio-seccion .card .card-item {
   padding: 1rem;
@@ -136,11 +137,6 @@ body p, body label {
   background-color: rgba(69, 178, 242, 0.2);
 }
 
-@media (max-width: 992px) {
-  .inicio-seccion .container .card .card-item .logo1 {
-    width: 80px;
-  }
-}
 @media (min-width: 1024px) {
   .inicio-seccion .texto-descripcion {
     margin-left: 3rem;
