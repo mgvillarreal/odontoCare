@@ -209,7 +209,7 @@ body p, body label {
 }
 
 .main-paginas {
-  min-height: calc(100vh - 365px);
+  min-height: calc(100vh - 352px);
   text-align: center;
 }
 
